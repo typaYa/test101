@@ -8,10 +8,6 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-    public function comments()
-    {
-        $model = new \App\Models\CommentsModel();
-        $data = $model->findAll();
-        return view('comments', ['comments' => $data]);
-    }
+
+
 }

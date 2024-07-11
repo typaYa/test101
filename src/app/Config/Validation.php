@@ -41,4 +41,9 @@ class Validation extends BaseConfig
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
+    public function valid_date($str, string $format, array $data): bool
+    {
+        $d = \DateTime::createFromFormat($format, $str);
+        return $d && $d->format($format) === $str;
+    }
 }

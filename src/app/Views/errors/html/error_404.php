@@ -79,6 +79,7 @@
                 <?= lang('Errors.sorryCannotFind') ?>
             <?php endif; ?>
         </p>
+        <a href="/comments">Перейти на главную</a>
     </div>
 </body>
 </html>

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1720722617;_ci_previous_url|s:30:"http://localhost:8081/comments";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:5:"email";s:18:"neloret3@gmail.com";s:4:"text";s:6:"QWEQWE";s:4:"date";s:10:"1212-12-12";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:6:"errors";s:3:"old";}errors|a:1:{s:4:"date";s:82:"Введите корректную дату в формате ДД-ММ-ГГГГ.";}
