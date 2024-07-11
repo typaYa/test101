@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'db',
+        'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => 'cod31gn1t3',
         'database'     => 'codeigniter_db',
