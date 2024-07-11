@@ -1,0 +1,17 @@
+[Thu Jul 11 12:30:24.889753 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.1.29 configured -- resuming normal operations
+[Thu Jul 11 12:30:24.890496 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jul 11 12:30:41.497323 2024] [php:warn] [pid 17] [client 172.18.0.1:59816] PHP Warning:  require(/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:30:41.498089 2024] [php:error] [pid 17] [client 172.18.0.1:59816] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/usr/local/lib/php') in /var/www/html/public/index.php:40\nStack trace:\n#0 {main}\n  thrown in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:30:41.547932 2024] [php:warn] [pid 17] [client 172.18.0.1:59816] PHP Warning:  require(/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:30:41.548358 2024] [php:error] [pid 17] [client 172.18.0.1:59816] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/usr/local/lib/php') in /var/www/html/public/index.php:40\nStack trace:\n#0 {main}\n  thrown in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:30:41.552808 2024] [php:warn] [pid 18] [client 172.18.0.1:59814] PHP Warning:  require(/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php): Failed to open stream: No such file or directory in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:30:41.553348 2024] [php:error] [pid 18] [client 172.18.0.1:59814] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/app/Config/../../vendor/codeigniter4/framework/system/bootstrap.php' (include_path='.:/usr/local/lib/php') in /var/www/html/public/index.php:40\nStack trace:\n#0 {main}\n  thrown in /var/www/html/public/index.php on line 40, referer: http://localhost/
+[Thu Jul 11 12:34:07.753936 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Jul 11 12:34:10.555599 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.1.29 configured -- resuming normal operations
+[Thu Jul 11 12:34:10.556050 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jul 11 12:36:14.006910 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Jul 11 12:36:16.395508 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Jul 11 12:36:16.395945 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jul 11 12:36:45.152196 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Jul 11 12:36:47.860604 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Jul 11 12:36:47.861911 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
