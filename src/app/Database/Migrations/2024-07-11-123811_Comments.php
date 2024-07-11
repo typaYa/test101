@@ -32,7 +32,7 @@ class Comments extends Migration
         $this->forge->addKey('id', true);
 
         // Создаем таблицу
-        $this->forge->createTable('your_table_name');
+        $this->forge->createTable('message');
     }
 
     public function down()
