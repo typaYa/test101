@@ -8,7 +8,6 @@ class Comments extends Migration
 {
     public function up()
     {
-        // Определяем структуру таблицы
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
@@ -18,6 +17,7 @@ class Comments extends Migration
             'name' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
+                'unique'     => true,
             ],
             'text' => [
                 'type' => 'TEXT',
@@ -27,16 +27,13 @@ class Comments extends Migration
             ],
         ]);
 
-        // Определяем первичный ключ
         $this->forge->addKey('id', true);
 
-        // Создаем таблицу
         $this->forge->createTable('comments');
     }
 
     public function down()
     {
-        // Удаляем таблицу
         $this->forge->dropTable('comments');
     }
 }

@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+<div class="container">
 <div class="comments-list">
     <h1>Изменение коментария</h1>
     <?= form_open('comments/update/'.$comment['id']) ?>
@@ -32,5 +33,6 @@
     <?php } ?>
     <button type="submit" class="btn btn-primary">Сохранить</button>
     <?= form_close()?>
+</div>
 </div>
 </body>

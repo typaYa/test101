@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <title>Коментарии</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<style>
+    .comment{
+        position: relative;
+        padding: 5px 10px;
+        border: 1px solid #c7c7c7;
+        border-radius: 10px;
+    }
+    .text {
+        word-break: break-word;
+    }
+    #delete{
+        color: red;
+    }
 
+</style>
+<body>
 <div class="container" id="container">
     <h1 style="">Коментарии</h1>
     <div class="mb-3">
@@ -25,8 +38,8 @@
             <?php foreach ($comments as $comment): ?>
                 <div class="comment mb-3">
                     <a href="<?= site_url('/comments/show/'.$comment['id']) ?>"><h4><?= esc($comment['name']) ?></h4></a>
-                    <p><?= esc($comment['text']) ?></p>
-                    <small><?= esc($comment['date']) ?> id: <?php echo $comment['id'];?></small>
+                    <p class="text"><?= esc($comment['text']) ?></p>
+                    <small><?= esc($comment['date']) ?> id:<?php echo $comment['id'];?></small>
                     <div>
                         <a href="/comments/edit/<?= esc($comment['id']) ?>">Править</a>
                         <a href="/comments/delete/<?= esc($comment['id']) ?>" id="delete">Удалить</a>
@@ -100,11 +113,7 @@
         });
     });
 </script>
-    <script>
-        function confirmDelete(){
-            return confirm("Удалить запись?");
-        }
-    </script>
+
 <script>
     $(document).ready(function(){
         $('#sort').on('change', function(){

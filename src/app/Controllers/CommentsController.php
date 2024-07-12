@@ -12,7 +12,6 @@ class CommentsController extends BaseController
         $pager = $model->pager;
         $sort = $this->request->getVar('sort') ? $this->request->getVar('sort') : 'id_asc';
 
-        // Устанавливаем параметры сортировки
         switch ($sort) {
             case 'id_desc':
                 $comments = $model->orderBy('id', 'DESC')->paginate(3);

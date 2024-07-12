@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class CommentsModel extends Model
 {
-    protected $table = 'message';
+    protected $table = 'comments';
     protected $allowedFields = ['name', 'text', 'date'];
     protected $validationRules=[
       'name'=>'valid_email|required',

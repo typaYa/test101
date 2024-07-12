@@ -8,12 +8,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<div class="comments-list">
-    <h1>Коментарий</h1>
-            <div class="comment mb-3">
-                <h4><?= esc($comment['name']) ?></h4>
-                <p><?= esc($comment['text']) ?></p>
-                <small><?= esc($comment['date']) ?></small>
-            </div>
+<style>
+    .comment{
+        position: relative;
+        padding: 5px 10px;
+        border: 1px solid #c7c7c7;
+        border-radius: 10px;
+    }
+</style>
+<div class="container">
+    <div class="comments-list">
+        <h1>Коментарий</h1>
+                <div class="comment mb-3">
+                    <h4><?= esc($comment['name']) ?></h4>
+                    <p><?= esc($comment['text']) ?></p>
+                    <small><?= esc($comment['date']) ?> id: <?= esc($comment['id']) ?></small>
+                </div>
+    </div>
 </div>
 </body>

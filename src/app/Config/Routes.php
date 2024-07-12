@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/a', 'Home::index');
+$routes->get('/', 'CommentsController::comments');
 $routes->get('/comments/', 'CommentsController::comments');
 $routes->get('/comments/show/(:num)', 'CommentsController::show/$1');
 $routes->post('/comments/new', 'CommentsController::new');
